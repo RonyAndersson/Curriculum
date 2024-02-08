@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: #edebeb;
+    background-image: radial-gradient(#a2a2a2 0.9px, #edebeb 0.9px);
+    background-size: 18px 18px;
+    height: 100vh;
+}
+
+.gridcontainer {
+    padding: 2rem;
+    width: 60%;
+    height: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "sidebar main main"
+        "sidebar main main";
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------------------ */
+
+/* HEADER STYLES */
+.header {
+    grid-area: header;
+    background-color: #2e211f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.header__title {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.title__span {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #e2e2e2;
+}
+
+/* FIM HEADER STYLES */
+
+/* ------------------------------------------------ */
+
+/* ASIDE STYLES */
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    background-color: #EEE7E1;
+    padding: 1.5rem;
+}
+
+.sidebar h2 {
+    font-size: 2rem;
+    color: #2c2c2c;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sidebar p {
+    color: #5F5F63;
+}
+
+.contato__info {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 18rem;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.info__p {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-weight: 500;
+    color: #5F5F63;
+}
+
+.sidebar i {
+    color: #317071;
+    font-size: 1.8rem;
+}
+
+.cursos__info {
+
+    font-size: 1.3rem;
+    /* border: 1px solid saddlebrown; */
+    color: #5F5F63;
+}
+
+.cursos__lista {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.lista__span {
+    color: #317071;
+}
+
+.skills__container {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* FIM ASIDE STYLES */
+
+/* ------------------------------------------------ */
+
+/* MAIN STYLES */
+.content {
+    grid-area: main;
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #317071;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.experiencia__projeto {
+    text-transform: uppercase;
+    color: #5F5F63;
+    margin-bottom: .5rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.content__sobre {
+    margin-bottom: 2rem;
+}
+
+.content__experiencia {
+    margin-bottom: 2rem;
+}
+
+.social__content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.social__icon {
+    font-size: 4rem;
+    color: #5F5F63;
+    transition: all 200ms ease-in-out;
+}
+
+.social__icon:hover {
+    transform: scale(1.2);
+    color: #2bc9c8;
+}
+
+.social__content a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+.social__content p {
+    color: #5F5F63;
+    margin-top: .2rem;
+    letter-spacing: .2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 200ms ease-in-out;
+}
+
+.social__content p:hover {
+    color: #2bc9c8;
+}
